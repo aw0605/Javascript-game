@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+/* ---------- 구글폰트 ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Poppins:wght@400;500;600;700&display=swap');
+
+/* font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+/* ----------- reset ---------- */
+*{
+    margin: 0; 
+    padding: 0;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+/* ---------- MOBILE ---------- */
+/* HEADER */
+.header{
+    width: 100%;
+    background: #454545;
+    color: #fff;
+    text-align: center;
+    padding: 3rem 2rem 2rem 2rem;
+}
+.header h1{font-size: 2.5rem;}
+
+/* 영어단어 보이기 */
+.word-display{
+    padding-top: 2rem;
+    font-family: 'Poppins', sans-serif; 
+    font-size: 3.75rem;
+    font-weight: bold;
+    text-align: center;
+    color: royalblue;
+}
+
+/* 영어단어 뜻 입력창 */
+.word-input-box{margin-top: 2rem;}
+.word-input{
+    padding: 0.8rem;
+    width: 220px;
+}
+.word-input:focus{background: #ededed;}
+
+/* 타이머 및 스코어 */
+.game-info{
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+}
+.time,.score{font-size: 1.875rem;}
+
+/* GAME START 버튼 */
+.button{
+    width: 200px;
+    height: 35px;
+    background: #454545;
+    color: #fff;
+    border: none;
+    margin-top: 3rem;
+    cursor: pointer;
+}
+.button:hover{
+    background: royalblue;
+    transform: scale(1.1);
+    transition: all .4s ease-in;
+}
+/* 게임 실행중 버튼 효과 */
+.loading{
+    background: #ccc;
+    cursor: not-allowed;
+}
+.loading:hover{transform: none; background: #ccc;}
+
+/*---------------- tablet ----------------*/
+@media all and (min-width: 768px){
+    /* HEADER */
+    .header{padding: 2rem;}
+
+    /* 영어단어 보이기 */
+    .word-display{font-size: 5.625rem;}
+    
+    /* 영어단어 뜻 입력창 */
+    .word-input-box{margin-top: 3rem;}
+    .word-input{width: 300px;}
+
+    /* 타이머 및 스코어 */
+    .game-info{width: 300px;}
+    .time,.score{font-size: 2.188rem;}
+}
+
+/*---------------- PC ----------------*/
+@media all and (min-width: 1280px){
+    /* 영어단어 보이기 */
+    .word-display{font-size: 6.875rem;}
+}

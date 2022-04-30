@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영단어 게임</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- API 이용 시 필요한 script-->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="header">
+        <h1>영단어 게임</h1>
+    </div>
+    
+    <!-- 영어단어 보이는 곳 -->
+    <div class="word-display">
+        Start
+    </div>
+
+    <!-- 영어단어 뜻 입력창 -->
+    <div class="word-input-box">
+        <input type="text" class="word-input" placeholder="영어단어의 뜻을 입력하세요">
+    </div>
+
+    <!-- 타이머 및 스코어 표시-->
+    <div class="game-info">
+        <div>
+            남은시간 : <span class="time">0</span>초
+        </div>
+        <div>
+            <span class="before"></span> 획득점수 : <span class="score">0</span>점
+        </div>
+    </div>
+
+    <!-- GAME START 버튼 -->
+    <button class="button loading" onclick="run()">loading...</button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
